@@ -1,14 +1,14 @@
 {
-  "name": "fe-flow",
-  "version": "1.1.0",
-  "description": "This is my Front-End workflow as a project. I will be using this as the starting point of all my FE web development.",
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "This is my Front-End workflow for React projects.",
   "main": "index.js",
   "config": {
     "theme": "app"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/murielg/FE-flow.git"
+    "url": "https://github.com/murielg/reactstarter"
   },
   "scripts": {
     "start": "parallelshell 'npm run live-server' 'npm run watch'",
@@ -45,7 +45,7 @@
   "author": "Muriel Gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/murielg/FE-flow/issues"
+    "url": "https://github.com/murielg/reactstarter/issues"
   },
-  "homepage": "https://github.com/murielg/FE-flow"
+  "homepage": "https://github.com/murielg/reactstarter"
 }
