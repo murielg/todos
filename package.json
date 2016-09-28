@@ -1,0 +1,51 @@
+{
+  "name": "fe-flow",
+  "version": "1.1.0",
+  "description": "This is my Front-End workflow as a project. I will be using this as the starting point of all my FE web development.",
+  "main": "index.js",
+  "config": {
+    "theme": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murielg/FE-flow.git"
+  },
+  "scripts": {
+    "start": "parallelshell 'npm run live-server' 'npm run watch'",
+    "serve": "http-server app/",
+    "livereload": "live-reload --g port 9091 -o -s $npm_package_config_theme/",
+    "live-server": "live-server --open=app/",
+    "build": "npm run build:css & npm run build:js",
+    "watch": "npm run watch:css & npm run watch:js",
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass $npm_package_config_theme/css/scss/style.scss --output-style compressed >  $npm_package_config_theme/css/style.css",
+    "watch:js": "watchify $npm_package_config_theme/js/index.js -t [ babelify --presets [ es2015 react ] ] -o $npm_package_config_theme/js/bundle.js",
+    "build:js": "browserify $npm_package_config_theme/js/index.js -t [ babelify --presets [ es2015 react ] ] -o $npm_package_config_theme/js/bundle.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "bootstrap-sass": "^3.3.6",
+    "browserify": "^13.0.1",
+    "live-server": "^1.0.0",
+    "minifyify": "^7.3.3",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "parallelshell": "^2.0.0",
+    "uglify-js": "^2.6.2",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "author": "Muriel Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murielg/FE-flow/issues"
+  },
+  "homepage": "https://github.com/murielg/FE-flow"
+}
