@@ -1,0 +1,15 @@
+html {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
