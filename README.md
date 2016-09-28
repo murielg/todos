@@ -1,6 +1,6 @@
-# reactstarter
+# TODOs
 ====
-This will be used as my starting point when working on React JS + Flux projects.
+TODOs App using ReactJS and Firebase
 
 ---
 `npm install` and `npm run watch` should get you going.  
