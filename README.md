@@ -1,8 +1,19 @@
-# TODOs
+## To-do's
 
-TODOs App using ReactJS and Firebase
+A simple To-do web app built using react and firebase
 
-##Installation
+### Things you'll need
 
-`npm install` and `npm run watch` should get you going.  
+- node.js (nvm is highly recommended)
 
+- npm
+
+- yarn
+
+### You know what to do
+
+- Install dependencies with ` yarn install `
+
+- Watch and develop with ` npm start `
+
+- Build with `npm run build`

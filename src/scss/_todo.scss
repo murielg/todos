@@ -1,0 +1,23 @@
+.todo-container {
+  width: 50%;
+  max-width: 450px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    width: 90%;
+    max-width: none;
+  }
+}
+ul.todo-list {
+  @extend %unstyled-list;
+  opacity: 0;
+  text-align: left;
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+  }
+  &.visible {
+    opacity: 1;
+  }
+}
